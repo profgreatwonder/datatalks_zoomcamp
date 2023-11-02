@@ -36,7 +36,7 @@ Replace your_env_name with the name of your newly created environment. After act
     First, activate the environment you want to export, and then use the conda list --export command to export the environment's specifications to a YAML or text file. For example:
 
             conda activate myenv
-            conda list --export > environment.yml
+            conda env export > environment.yml
 
 2.  Commit and Push to GitHub:
 
