@@ -28,13 +28,6 @@ Replace your_env_name with the name of your newly created environment. After act
 
         conda env list
         conda info --envs
-
-
-## To recreate the Anaconda environment using the environment.yml file
-
-use the following command to create the same environment:
-
-       conda env create -f environment.yml
        
 
 ## Steps to push data science or machine learning projects done inside an anaconda environment (according to chatgpgt)
