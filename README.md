@@ -23,6 +23,11 @@ Replace your_env_name with the name of your newly created environment. After act
 5. Deactivate the Environment: When you're done working in the environment, you can deactivate it using the following command:
 
         conda deactivate
+        
+6. To check the list of environments
+
+        conda env list
+        conda info --envs
 
 
 ## To recreate the Anaconda environment using the environment.yml file
