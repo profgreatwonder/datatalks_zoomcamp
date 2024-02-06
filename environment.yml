@@ -191,4 +191,13 @@ dependencies:
   - zipp=3.11.0=py38haa95532_0
   - zlib=1.2.13=h8cc25b3_0
   - zstd=1.5.5=hd43e919_0
+  - pip:
+      - blinker==1.7.0
+      - click==8.1.7
+      - flask==3.0.0
+      - gunicorn==21.2.0
+      - itsdangerous==2.1.2
+      - tqdm==4.66.1
+      - waitress==2.1.2
+      - werkzeug==3.0.1
 prefix: C:\Users\DELL\anaconda3\envs\ml-zoomcamp

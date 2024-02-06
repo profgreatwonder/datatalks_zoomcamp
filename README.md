@@ -1,8 +1,8 @@
 ## How to Create an Environment for Data Science Projects (according to chatgpgt)
 
-1. Open Anaconda Prompt or Terminal: Depending on your operating system, open the Anaconda Prompt (Windows) or a terminal (macOS and Linux).
+1.  Open Anaconda Prompt or Terminal: Depending on your operating system, open the Anaconda Prompt (Windows) or a terminal (macOS and Linux).
 
-2. Create a New Environment: Use the conda create command to create a new environment. You need to specify the name of the environment, and you can also specify the Python version if desired. Here's the basic syntax:
+2.  Create a New Environment: Use the conda create command to create a new environment. You need to specify the name of the environment, and you can also specify the Python version if desired. Here's the basic syntax:
 
         conda create --name your_env_name python=3.x
 
@@ -12,23 +12,22 @@ For example, to create an environment named "myenv" with Python 3.8, you can use
 
         conda create --name myenv python=3.8
 
-3. Activate the Environment: Once the environment is created, you need to activate it. Use the conda activate command:
+3.  Activate the Environment: Once the environment is created, you need to activate it. Use the conda activate command:
 
         conda activate your_env_name
 
 Replace your_env_name with the name of your newly created environment. After activation, you'll be working within the context of the specified environment.
 
-4. Install Packages: You can install packages and libraries within your new environment using conda install or pip install as needed. Any packages you install will be isolated within the environment.
+4.  Install Packages: You can install packages and libraries within your new environment using conda install or pip install as needed. Any packages you install will be isolated within the environment.
 
-5. Deactivate the Environment: When you're done working in the environment, you can deactivate it using the following command:
+5.  Deactivate the Environment: When you're done working in the environment, you can deactivate it using the following command:
 
         conda deactivate
-        
-6. To check the list of environments
+
+6.  To check the list of environments
 
         conda env list
         conda info --envs
-       
 
 ## Steps to push data science or machine learning projects done inside an anaconda environment (according to chatgpgt)
 
@@ -36,7 +35,7 @@ Replace your_env_name with the name of your newly created environment. After act
     First, activate the environment you want to export, and then use the conda list --export command to export the environment's specifications to a YAML or text file. For example:
 
             conda activate myenv
-            conda env export > environment.yml
+            conda env export --no-builds > environment.yml
 
 2.  Commit and Push to GitHub:
 
@@ -47,7 +46,7 @@ Replace your_env_name with the name of your newly created environment. After act
     In the README or documentation of your GitHub repository, you can instruct others to recreate the Anaconda environment using the environment.yml file you provided. They can use the following command to create the same environment:
 
             conda env create -f environment.yml
-            
+
 
 ## Steps to change the name of an environment and remove (according to chatgpt)
 
@@ -62,4 +61,3 @@ Replace your_env_name with the name of your newly created environment. After act
 3.  Remove the Old Environment (Optional): After you have successfully created the new environment with the desired name and verified that it works as expected, you can choose to remove the old environment. This step is optional but can help clean up your environment list if you no longer need the old environment:
 
                 conda env remove --name oldenv
-
